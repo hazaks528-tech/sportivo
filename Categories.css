@@ -1,0 +1,399 @@
+/* ==============================
+   SPORTIVO CATEGORIES PAGE
+   ============================== */
+
+.categories-page {
+  min-height: 100vh;
+  background: #f4f6f8;
+  color: #092d55;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==============================
+   HERO
+   ============================== */
+
+.categories-page .category-hero {
+  min-height: 390px;
+  position: relative;
+  overflow: hidden;
+
+  background: #101010;
+
+  display: flex;
+  align-items: center;
+
+  border-bottom: 5px solid #ff5a00;
+}
+
+.categories-page .category-hero::after {
+  content: "";
+
+  position: absolute;
+
+  right: -130px;
+  top: -100px;
+
+  width: 48%;
+  height: 650px;
+
+  background: #ff5a00;
+
+  transform: skewX(-20deg);
+
+  z-index: 1;
+}
+
+.categories-page .category-hero-content {
+  position: relative;
+  z-index: 5;
+
+  width: 60%;
+  margin-left: 10%;
+}
+
+.categories-page .explore-text {
+  color: #ff5a00;
+
+  font-size: 15px;
+  font-weight: 800;
+
+  letter-spacing: 6px;
+
+  margin-bottom: 10px;
+}
+
+.categories-page .category-hero h1 {
+  margin: 0;
+
+  font-size: 70px;
+  line-height: 1;
+
+  font-weight: 900;
+
+  color: white;
+
+  letter-spacing: 3px;
+}
+
+.categories-page .category-hero h1 span {
+  color: #ff5a00;
+}
+
+.categories-page .category-hero h2 {
+  margin: 12px 0;
+
+  color: white;
+
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.categories-page .orange-line {
+  width: 70px;
+  height: 5px;
+
+  background: #ff5a00;
+
+  margin: 15px 0 20px;
+}
+
+.categories-page .hero-description {
+  max-width: 570px;
+
+  color: #d5d5d5;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ICONS */
+
+.categories-page .sports-icons {
+  position: absolute;
+
+  right: 12%;
+  bottom: 90px;
+
+  z-index: 5;
+
+  font-size: 45px;
+
+  word-spacing: 15px;
+}
+
+/* ==============================
+   CATEGORY BUTTONS
+   ============================== */
+
+.categories-page .category-buttons {
+  position: relative;
+
+  z-index: 10;
+
+  max-width: 1150px;
+
+  margin: -35px auto 0;
+
+  padding: 18px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 12px;
+}
+
+.categories-page .category-buttons button {
+  padding: 15px 10px;
+
+  background: white;
+
+  border: 1px solid #d9e1e8;
+
+  border-radius: 10px;
+
+  color: #092d55;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.categories-page .category-buttons button:hover {
+  background: #ff5a00;
+
+  color: white;
+
+  border-color: #ff5a00;
+
+  transform: translateY(-3px);
+}
+
+/* ==============================
+   PRODUCTS SECTION
+   ============================== */
+
+.categories-page .products-section {
+  max-width: 1150px;
+
+  margin: 55px auto;
+
+  padding: 0 20px;
+}
+
+.categories-page .products-section > h2 {
+  text-align: left;
+
+  color: #092d55;
+
+  font-size: 34px;
+
+  margin-bottom: 5px;
+}
+
+.categories-page .products-subtitle {
+  color: #718096;
+
+  margin-bottom: 30px;
+}
+
+/* ==============================
+   PRODUCT GRID
+   ============================== */
+
+.categories-page .products-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+/* ==============================
+   PRODUCT CARD
+   ============================== */
+
+.categories-page .product-card {
+  background: white;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  border: 1px solid #dce3ea;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+  transition: 0.3s;
+}
+
+.categories-page .product-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #ff5a00;
+
+  box-shadow: 0 15px 35px rgba(255,90,0,0.18);
+}
+
+/* IMAGE */
+
+.categories-page .product-image {
+  width: 100%;
+  height: 220px;
+
+  background: #eef3f8;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.categories-page .product-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+/* INFO */
+
+.categories-page .product-info {
+  padding: 20px;
+}
+
+.categories-page .product-info small {
+  color: #ff5a00;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.categories-page .product-info h3 {
+  color: #092d55;
+
+  font-size: 19px;
+
+  margin: 7px 0 10px;
+}
+
+.categories-page .price {
+  color: #ff5a00;
+
+  font-size: 20px;
+
+  font-weight: 800;
+
+  margin-bottom: 7px;
+}
+
+.categories-page .rating {
+  color: #555;
+
+  font-size: 14px;
+
+  margin-bottom: 15px;
+}
+
+/* PLACE ORDER */
+
+.categories-page .place-order {
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #ff5a00;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.categories-page .place-order:hover {
+  background: #111;
+
+  transform: translateY(-2px);
+}
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+
+@media (max-width: 1000px) {
+
+  .categories-page .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .categories-page .category-buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .categories-page .sports-icons {
+    right: 5%;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .categories-page .category-hero {
+    min-height: 480px;
+  }
+
+  .categories-page .category-hero-content {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .categories-page .category-hero h1 {
+    font-size: 48px;
+  }
+
+  .categories-page .category-hero h2 {
+    font-size: 22px;
+  }
+
+  .categories-page .sports-icons {
+    right: 5%;
+    bottom: 30px;
+
+    font-size: 30px;
+  }
+
+  .categories-page .category-buttons {
+    grid-template-columns: repeat(2, 1fr);
+
+    margin: -20px 15px 0;
+  }
+
+  .categories-page .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
